@@ -79,7 +79,7 @@ ul#keyboard li em {
 }
 ul#keyboard li .deadKey {
   font-size: larger;
-  color: red;
+  color: red !important;
 }
 
 /* special keys */
