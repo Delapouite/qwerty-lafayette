@@ -73,7 +73,7 @@ xkb_keymap {
   // ┃ ⇬       ┃   { │   [ │   ] │   } │   | │     │   1 │   2 │   3 │     │     │     ┃      ┃
   // ┣━━━━━━┳━━┹──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┷━━━━━┻━━━━━━┫
   // ┃      ┃     │     │     │     │     │     │     │     │     │     │     ┃               ┃
-  // ┃ ⇧    ┃     │     │     │     │     │     │     │   0 │   , │   . │     ┃ ⇧             ┃
+  // ┃ ⇧    ┃   _ │   ' │   " │   ^ │   $ │   & │     │   0 │   , │   . │     ┃ ⇧             ┃
   // ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━━┳━┷━━━━━╋━━━━━━━┳━━━━━━━┫
   // ┃       ┃       ┃       ┃                                ┃       ┃       ┃       ┃       ┃
   // ┃ Ctrl  ┃ super ┃ Alt   ┃ ␣ Échapp                       ┃ AltGr ┃ super ┃ menu  ┃ Ctrl  ┃
@@ -219,23 +219,23 @@ xkb_keymap {
       // Lettres, troisième rangée
       key <AB01> {
         type[group1] = "FOUR_LEVEL", [ z, Z, less, lessthanequal ],
-        type[group2] = "TWO_LEVEL" , [ underscore, VoidSymbol ]
+        type[group2] = "TWO_LEVEL" , [ apostrophe, VoidSymbol ]
       };
       key <AB02> {
         type[group1] = "FOUR_LEVEL", [ x, X, greater, greaterthanequal ],
-        type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
+        type[group2] = "TWO_LEVEL" , [ quotedbl, VoidSymbol ]
       };
       key <AB03> {
         type[group1] = "FOUR_LEVEL", [ c, C, ccedilla, Ccedilla ],
-        type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
+        type[group2] = "TWO_LEVEL" , [ asciicircum, VoidSymbol ]
       };
       key <AB04> {
         type[group1] = "FOUR_LEVEL", [ v, V, ubreve, Ubreve ],
-        type[group2] = "TWO_LEVEL" , [ plus, plusminus ]
+        type[group2] = "TWO_LEVEL" , [ dollar, plusminus ]
       };
       key <AB05> {
         type[group1] = "FOUR_LEVEL", [ b, B, VoidSymbol, VoidSymbol ],
-        type[group2] = "TWO_LEVEL" , [ equal, notequal ]
+        type[group2] = "TWO_LEVEL" , [ ampersand, notequal ]
       };
       key <AB06> {
         type[group1] = "FOUR_LEVEL", [ n, N, ntilde, Ntilde ],
@@ -285,7 +285,7 @@ xkb_keymap {
       };
       key <LSGT> {
         type[group1] = "FOUR_LEVEL", [ less, greater, lessthanequal, greaterthanequal ],
-        type[group2] = "TWO_LEVEL" , [ lessthanequal, greaterthanequal ]
+        type[group2] = "TWO_LEVEL" , [ underscore, VoidSymbol ]
       };
       key <SPCE> {
         type[group1] = "FOUR_LEVEL", [ space, nobreakspace, rightsinglequotemark, U202F ],
