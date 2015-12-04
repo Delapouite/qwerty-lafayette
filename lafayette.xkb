@@ -14,7 +14,11 @@
 //
 
 xkb_keymap {
-  xkb_keycodes { include "evdev" };
+  xkb_keycodes {
+    include "evdev"
+    // Romaji - see end of this file
+    <ROMA> = 97;
+  };
   xkb_types {
     include "complete"
     type "ALTGR_TWO" {
@@ -283,7 +287,7 @@ xkb_keymap {
     };
     key <BKSL> {
       type[group1] = "FOUR_LEVEL", [ backslash, bar, VoidSymbol, VoidSymbol ],
-      type[group2] = "TWO_LEVEL" , [ backslash, brokenbar ]
+      type[group2] = "TWO_LEVEL" , [ brokenbar, VoidSymbol ]
     };
     key <LSGT> {
       type[group1] = "FOUR_LEVEL", [ less, greater, lessthanequal, greaterthanequal ],
@@ -297,10 +301,17 @@ xkb_keymap {
     // AltGr
     key <RALT> { [ VoidSymbol ], actions = [ SetGroup(group=2) ] };
 
+    // TypeMatrix 2030 in 106 mode
+
+    // Antislash key - Romaji keycode 97
+    key <ROMA> {
+      type[group1] = "FOUR_LEVEL", [ backslash, bar, VoidSymbol, VoidSymbol ],
+      type[group2] = "TWO_LEVEL" , [ brokenbar, VoidSymbol ]
+    };
     // Ces clés sont ensuite remappées en Super_L via xmodmap
-    // Shuffle key on TMX30 in 106 mode - Muhenkan keycode 102
+    // Shuffle key - Muhenkan keycode 102
     key <MUHE> { [ Muhenkan ] };
-    // Desktop key on TMX30 in 106 mode - Henkan keycode 100
+    // Desktop key - Henkan keycode 100
     key <HENK> { [ Henkan ] };
   };
 
