@@ -3,15 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="description" content="a QWERTY keyboard layout for French-speaking users" />
-  <title> Lafayette Keyboard Layout </title>
+  <title> Delafayette Keyboard Layout </title>
 
   <link type="text/css" rel="stylesheet" href="css/layout.css"      />
   <link type="text/css" rel="stylesheet" href="css/keyboard.css"    />
   <link type="text/css" rel="stylesheet" href="css/lafayette.css"   />
   <link type="text/css" rel="stylesheet" href="css/transitions.css" />
-  <!--[if lt IE 9]>
-    <link type="text/css" rel="stylesheet" href="css/lafayette-oldie.css" />
-  <![endif]-->
 
   <script type="text/javascript" src="js/timesheets-min.js"></script>
   <script type="text/javascript" src="js/adblock-tester.js"></script>
@@ -25,10 +22,10 @@
   </script>
 </head>
 <body class="qwerty">
-  <a href="https://github.com/fabi1cazenave/qwerty-lafayette"
+  <a href="https://github.com/delapouite/qwerty-lafayette"
     id="github"><span>Fork me on GitHub</span></a>
 
-  <h1> Qwerty-Lafayette </h1>
+  <h1> Qwerty-Delafayette </h1>
   <p> Écrire confortablement en français sur un clavier QWERTY, c’est possible ! </p>
 
   <div style="position: relative; margin: 0 auto; width: 664px;">
@@ -36,8 +33,8 @@
       <span style="font-size: smaller;">géométrie :</span>
       <select id="shape" onchange="setShape(this.value);">
         <option value="tmx"> ergonomique </option>
-        <option value="pc104" selected="selected"> ANSI (pc104) </option>
-        <option value="pc105"> ISO (pc105) </option>
+        <option value="pc104"> ANSI (pc104) </option>
+        <option value="pc105" selected="selected"> ISO (pc105) </option>
       </select>
     </form>
 
@@ -54,8 +51,8 @@
           <li id="key_TLDE">
             <strong> ~ </strong>
             <em> ` </em>
-            <strong class="lafayette secondary deadKey"> ~ </strong>
-            <em class="lafayette secondary deadKey"> ` </em>
+            <strong class="lafayette deadKey"> ~ </strong>
+            <em class="lafayette deadKey"> ` </em>
             <em class="altgr"> # </em>
           </li>
           <li id="key_AE01">
@@ -300,13 +297,12 @@
           <li id="key_AC10" class="qwerty">
             <strong class="deadKey"> ¨ </strong>
             <em class="deadKey"> ★ </em>
-            <em class="deadKey" style="display: none;"> ☆ </em>
             <em class="altgr"> - </em>
           </li>
           <li id="key_AC11">
             <strong> " </strong>
             <em> ' </em>
-            <strong class="lafayette secondary deadKey"> ˙ </strong>
+            <strong class="lafayette deadKey"> ˙ </strong>
             <em class="lafayette secondary"> ` </em>
           </li>
           <li id="key_RTRN" class="specialKey">
@@ -448,8 +444,8 @@
       </p>
       <ul>
         <li>
-          pour un <a href="#_qwerty">accès direct aux chiffres</a>, sans [Shift]
-          ni [CapsLock] ; 
+          pour un <a href="#_qwerty">accès direct aux chiffres</a>, sans <span class="key">[Shift]</span>
+          ni <span class="key">[CapsLock]</span> ;
         </li>
         <li>
           pour une <a href="#_lafayette">typographie soignée</a> en français :
@@ -475,20 +471,21 @@
     <div data-onbegin="select(this)" id="qwerty">
       <p>
         Cette disposition de clavier ne diffère que très peu du Qwerty-US :
-        seules 5 touches sont affectées. Elle convient donc particulièrement aux
+        seules <strong>5 touches sont affectées</strong>. Elle convient donc particulièrement aux
         claviers Qwerty, mais s’utilise tout aussi bien sur un clavier Azerty.
       </p>
       <p>
         Le principal intéret de cette modification est de permettre une saisie
         confortable des <strong>espaces insécables</strong> avant les
         ponctuations doubles (;:?!) et à l’intérieur des guillemets
-        typographiques («») : il suffit de maintenir la touche Shift enfoncée,
-        puis de presser [Espace] et la touche de ponctuation.
+        typographiques («») : il suffit de maintenir la touche <span class="key">[Shift]</span> enfoncée,
+        puis de presser <span class="key">[Escape]</span> et la touche de ponctuation.
       </p>
       <p>
         Par rapport au layout Azerty de référence pour les francophones, l’autre
         avantage de cette disposition est d’accéder aux <strong>chiffres en
-        direct</strong> — sans Shift ni CapsLock. Le pavé numérique n’est plus
+          direct</strong> — sans <span class="key">[Shift]</span>
+        ni <span class="key">[CapsLock]</span>. Le pavé numérique n’est plus
         indispensable !
       </p>
     </div>
@@ -496,8 +493,8 @@
     <div data-onbegin="select(this)" id="lafayette">
       <p>
         La plupart des accents utilisés en français sont obtenus par une seule
-        touche morte, située sur la rangée de base — cf. l’étoile sur fond
-        rouge dans le schéma ci-dessus.
+        <strong class="deadKey">touche morte</strong>, située sur la rangée de base
+        — cf. l’étoile rouge <strong class="deadKey">★</strong> dans le schéma ci-dessus.
       </p>
       <p>
         Cette touche morte permet aussi de saisir facilement les majuscules accentuées
@@ -518,17 +515,17 @@
     <div data-onbegin="select(this)" id="extra">
       <p>
         Cette disposition de clavier a été pensée pour une utilisation
-        occasionnelle en allemand, espagnol, italien et espéranto : accents,
-        umlauts, guillemets spécifiques…
+        occasionnelle en allemand, espagnol, italien et espéranto : <span class="lafayette">accents,
+        umlauts, guillemets spécifiques</span>…
       </p>
       <p>
         Contrairement à la plupart des dispositions de clavier, les caractères
         spéciaux requis pour ces langues ne sont pas obtenus avec AltGr mais
-        avec la touche morte, afin de privilédier le confort et la fluidité de
-        la saisie.
+        avec la <strong class="deadKey">touche morte ★</strong>, afin de privilégier
+        le confort et la fluidité de la saisie.
       </p>
       <p>
-        De même, tous les caractères spéciaux tels que ≤≠±≥©®™μ… sont obtenus
+        De même, tous les caractères spéciaux tels que <span class="lafayette">≤≠±≥©®™μ…</span> sont obtenus
         avec la même touche morte. La couche AltGr est donc optionnelle, et peut
         être entièrement personnalisée.
       </p>
@@ -536,20 +533,20 @@
 
     <div data-onbegin="select(this)" id="altgr">
       <p>
-        La couche AltGr n’est pas indispensable, puisque tous les caractères
+        La couche <span class="altgr">AltGr</span> n’est pas indispensable, puisque tous les caractères
         techniques (`~@#[]{}) sont accessibles soit directement, soit avec la
         touche morte. Néanmoins, elle peut s’avérer très pratique pour les
         développeurs, qui pourront l’adapter librement à leurs besoins.
       </p>
       <p>
         Dans la version de base ci-dessus, les caractères les plus utilisés en
-        C/C++ (ou Java, JavaScript…) et HTML/XML sont disponibles en AltGr +
-        main gauche. Cela permet de saisir rapidement des digrammes du type -&gt;,
+        C/C++ (ou Java, JavaScript…) et HTML/XML sont disponibles en <strong>AltGr +
+        main gauche</strong>. Cela permet de saisir rapidement des digrammes du type -&gt;,
         &lt;/, /&gt;. Les accolades {} et crochets [] sont sur la rangée de base,
         bien plus accessibles qu’en Qwerty classique.
       </p>
       <p>
-        Sous la main droite, un pavé numérique virtuel (comparable à ceux des
+        Sous la main droite, un <strong>pavé numérique virtuel</strong> (comparable à ceux des
         portables) est proposé. Il n’est pas très facile d’accès sous Linux (pas
         de touche AltGr / Ctrl+Alt à gauche) mais permet néanmoins de saisir
         rapidement des (0) ou [0], très fréquents dans les langages de

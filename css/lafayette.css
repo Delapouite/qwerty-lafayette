@@ -15,7 +15,6 @@ ul#keyboard li.letter em.altgr {
 /* AltGr keys */
 ul#keyboard li .altgr {
   opacity: 0;
-  filter: alpha(opacity=0);
   left: auto;
   right: 5px;
   color: blue;
@@ -52,20 +51,20 @@ ul#keyboard li strong.lafayette.secondary {
 .altgr ul#keyboard li em,
 .altgr ul#keyboard li strong {
   opacity: 0.2;
-  filter: alpha(opacity=20);
 }
 .altgr ul#keyboard li .lafayette {
   opacity: 0;
-  filter: alpha(opacity=0);
 }
 .altgr ul#keyboard li .altgr {
   opacity: 1;
-  filter: alpha(opacity=100);
 }
-.altgr li#ralt em {
+.altgr ul#keyboard li#key_RALT {
+  background: blue;
+}
+.altgr ul#keyboard li#key_RALT em {
   opacity: 1;
-  filter: alpha(opacity=100);
-  color: blue;
+  color: white;
+  font-weight: bold;
 }
 
 ul#keyboard li em.lafayette.secondary,
@@ -111,11 +110,7 @@ div#description div {
   padding: 20px;
   border: 1px solid #ddd;
   background-color: #f8f8f8;
-   -webkit-border-radius: 15px;
-      -moz-border-radius: 15px;
-       -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-           border-radius: 15px;
+  border-radius: 15px;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -126,6 +121,23 @@ div#description li {
 
 div#description a {
   color: brown !important;
+}
+
+div#description .key {
+  background: #ddd;
+}
+
+div#description .deadKey {
+  color: red;
+}
+
+div#description .lafayette {
+  color: green;
+}
+
+div#description .altgr {
+  color: blue;
+  font-weight: bold;
 }
 
 /* description selector */
@@ -150,29 +162,13 @@ p#selector a:hover {
 }
 
 p#selector a:first-child {
-   -webkit-border-top-left-radius: 8px;
-       -moz-border-radius-topleft: 8px;
-       -ms-border-top-left-radius: 8px;
-        -o-border-top-left-radius: 8px;
-           border-top-left-radius: 8px;
-   -webkit-border-bottom-left-radius: 8px;
-       -moz-border-radius-bottomleft: 8px;
-       -ms-border-bottom-left-radius: 8px;
-        -o-border-bottom-left-radius: 8px;
-           border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 p#selector a:last-child {
-   -webkit-border-top-right-radius: 8px;
-       -moz-border-radius-topright: 8px;
-       -ms-border-top-right-radius: 8px;
-        -o-border-top-right-radius: 8px;
-           border-top-right-radius: 8px;
-   -webkit-border-bottom-right-radius: 8px;
-       -moz-border-radius-bottomright: 8px;
-       -ms-border-bottom-right-radius: 8px;
-        -o-border-bottom-right-radius: 8px;
-           border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 
