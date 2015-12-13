@@ -35,8 +35,8 @@ ul#keyboard li strong.lafayette.secondary {
 
 /* qwerty/lafayette/altgr class switcher */
 .qwerty li.qwerty,
-.extra li#ac10,
-.lafayette li#ac10 {
+.extra li#key_AC10,
+.lafayette li#key_AC10 {
   background-color: #fdd;
 }
 .altgr     ul#keyboard li .altgr,
