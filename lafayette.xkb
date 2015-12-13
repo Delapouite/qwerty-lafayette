@@ -300,7 +300,8 @@ xkb_keymap {
     };
 
     // AltGr
-    key <RALT> { [ VoidSymbol ], actions = [ SetGroup(group=2) ] };
+    // Note: the `ISO_Level5_Latch` here is meaningless but helps with Chromium (no idea why).
+    key <RALT> { [ ISO_Level5_Latch ], actions = [ SetGroup(group=2) ] };
 
     // TypeMatrix 2030 in 106 mode
 
