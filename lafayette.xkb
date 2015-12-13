@@ -36,14 +36,14 @@ xkb_keymap {
   // │ ~ ~ │ ! ¡ │ @ ‘ │ # ’ │ $ ¤ │ % ‰ │ ^ ³ │ & ¦ │ * π │ (   │ )   │ _ — │ + ± ┃          ┃
   // │ ` ` │ 1 „ │ 2 “ │ 3 ” │ 4 £ │ 5 € │ 6 ² │ 7 | │ 8 ∞ │ 9   │ 0 ° │ - — │ = ≠ ┃ ⌫        ┃
   // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┯━━━━━━━┩
-  // ┃        ┃ Q Æ │ W É │ E È │ R ™ │ T Þ │ Y   │ U Ù │ I ⇑ │ O Œ │ P ¶ │ « { │ » } │ |     │
-  // ┃ ↹      ┃ q æ │ w é │ e è │ r ® │ t þ │ y ¥ │ u ù │ i ↑ │ o œ │ p § │ ^ [ │ ´ ] │ \     │
+  // ┃        ┃ Q Æ │ W É │ E È │ R ™ │ T Þ │ Y   │ U Ù │ I Ĳ │ O Œ │ P ¶ │ « { │ » } │ |     │
+  // ┃ ↹      ┃ q æ │ w é │ e è │ r ® │ t þ │ y ¥ │ u ù │ i ĳ │ o œ │ p § │ ^ [ │ ´ ] │ \     │
   // ┣━━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┲━━━━┷━━━━━━━┪
-  // ┃         ┃ A À │ S   │ D Ð │ F ª │ G ¢ │ H ‡ │ J ⇐ │ K ⇓ │ L ⇒ │ ¨   │ "   ┃            ┃
-  // ┃ ⇬       ┃ a à │ s ß │ d ð │ f ſ │ g © │ h † │ j ← │ k ↓ │ l → │ ★ ` │ ' ` ┃ ⏎          ┃
+  // ┃         ┃ A À │ S   │ D Ð │ F ª │ G ¢ │ H ⇐ │ J ⇓ │ K ⇑ │ L ⇒ │ ¨   │ "   ┃            ┃
+  // ┃ ⇬       ┃ a à │ s ß │ d ð │ f ſ │ g © │ h ← │ j ↓ │ k ↑ │ l → │ ★ ` │ ' ` ┃ ⏎          ┃
   // ┣━━━━━━━━━┻━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┻━━━━━━━━━━━━┫
-  // ┃            ┃ Z ≤ │ X ≥ │ C Ç │ V Ŭ │ B   │ N Ñ │ M º │ ;   │ : · │ ? ¿ ┃               ┃
-  // ┃ ⇧          ┃ z < │ x > │ c ç │ v ŭ │ b   │ n ñ │ m µ │ , • │ . … │ / \ ┃ ⇧             ┃
+  // ┃            ┃ Z ≤ │ X ≥ │ C Ç │ V Ŭ │ B ‡ │ N Ñ │ M º │ ;   │ : · │ ? ¿ ┃               ┃
+  // ┃ ⇧          ┃ z < │ x > │ c ç │ v ŭ │ b † │ n ñ │ m µ │ , • │ . … │ / \ ┃ ⇧             ┃
   // ┣━━━━━━━┳━━━━┻━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━━┳━┷━━━━━╋━━━━━━━┳━━━━━━━┫
   // ┃       ┃       ┃       ┃ ⍽ Espace insécable             ┃       ┃       ┃       ┃       ┃
   // ┃ Ctrl  ┃ super ┃ Alt   ┃ ␣ Espace                     ` ┃ AltGr ┃ super ┃ menu  ┃ Ctrl  ┃
@@ -54,14 +54,14 @@ xkb_keymap {
   // │ ~ ~ │ ! ¡ │ @ ‘ │ # ’ │ $ ¤ │ % ‰ │ ^ ³ │ & ¦ │ * π │ (   │ )   │ _ – │ + ± ┃          ┃
   // │ ` ` │ 1 „ │ 2 “ │ 3 ” │ 4 £ │ 5 € │ 6 ² │ 7 | │ 8 ∞ │ 9   │ 0 ° │ - — │ = ≠ ┃ ⌫        ┃
   // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
-  // ┃        ┃ Q Æ │ W É │ E È │ R ™ │ T Þ │ Y   │ U Ù │ I ⇑ │ O Œ │ P ¶ │ « { │ » } ┃       ┃
-  // ┃ ↹      ┃ q æ │ w é │ e è │ r ® │ t þ │ y ¥ │ u ù │ i ↑ │ o œ │ p § │ ^ [ │ ´ ] ┃       ┃
+  // ┃        ┃ Q Æ │ W É │ E È │ R ™ │ T Þ │ Y   │ U Ù │ I Ĳ │ O Œ │ P ¶ │ « { │ » } ┃       ┃
+  // ┃ ↹      ┃ q æ │ w é │ e è │ r ® │ t þ │ y ¥ │ u ù │ i ĳ │ o œ │ p § │ ^ [ │ ´ ] ┃       ┃
   // ┣━━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓  ⏎   ┃
-  // ┃         ┃ A À │ S   │ D Ð │ F ª │ G ¢ │ H ‡ │ J ⇐ │ K ⇓ │ L ⇒ │ ¨   │ "   │ |   ┃      ┃
-  // ┃ ⇬       ┃ a à │ s ß │ d ð │ f ſ │ g © │ h † │ j ← │ k ↓ │ l → │ ★ ` │ ' ` │ \   ┃      ┃
+  // ┃         ┃ A À │ S   │ D Ð │ F ª │ G ¢ │ H ⇐ │ J ⇓ │ K ⇑ │ L ⇒ │ ¨   │ "   │ |   ┃      ┃
+  // ┃ ⇬       ┃ a à │ s ß │ d ð │ f ſ │ g © │ h ← │ j ↓ │ k ↑ │ l → │ ★ ` │ ' ` │ \   ┃      ┃
   // ┣━━━━━━┳━━┹──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┷━━━━━┻━━━━━━┫
-  // ┃      ┃ > ≥ │ Z ≤ │ X ≥ │ C Ç │ V Ŭ │ B   │ N Ñ │ M º │ ;   │ : · │ ? ¿ ┃               ┃
-  // ┃ ⇧    ┃ < ≤ │ z < │ x > │ c ç │ v ŭ │ b   │ n ñ │ m µ │ , • │ . … │ / \ ┃ ⇧             ┃
+  // ┃      ┃ > ≥ │ Z ≤ │ X ≥ │ C Ç │ V Ŭ │ B ‡ │ N Ñ │ M º │ ;   │ : · │ ? ¿ ┃               ┃
+  // ┃ ⇧    ┃ < ≤ │ z < │ x > │ c ç │ v ŭ │ b † │ n ñ │ m µ │ , • │ . … │ / \ ┃ ⇧             ┃
   // ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━━┳━┷━━━━━╋━━━━━━━┳━━━━━━━┫
   // ┃       ┃       ┃       ┃ ⍽ Espace insécable             ┃       ┃       ┃       ┃       ┃
   // ┃ Ctrl  ┃ super ┃ Alt   ┃ ␣ Espace                     ` ┃ AltGr ┃ super ┃ menu  ┃ Ctrl  ┃
@@ -169,7 +169,7 @@ xkb_keymap {
       type[group2] = "TWO_LEVEL" , [ 4, VoidSymbol, VoidSymbol ]
     };
     key <AD08> {
-      type[group1] = "FOUR_LEVEL", [ i, I, uparrow, U21D1 ],
+      type[group1] = "FOUR_LEVEL", [ i, I, U0133, U0132 ],
       type[group2] = "TWO_LEVEL" , [ 5, VoidSymbol ]
     };
     key <AD09> {
@@ -203,15 +203,15 @@ xkb_keymap {
       type[group2] = "TWO_LEVEL" , [ bar, brokenbar ]
     };
     key <AC06> {
-      type[group1] = "FOUR_LEVEL", [ h, H, dagger, doubledagger ],
+      type[group1] = "FOUR_LEVEL", [ h, H, leftarrow, U21D0 ],
       type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
     };
     key <AC07> {
-      type[group1] = "FOUR_LEVEL", [ j, J, leftarrow, U21D0 ],
+      type[group1] = "FOUR_LEVEL", [ j, J, downarrow, U21D3 ],
       type[group2] = "TWO_LEVEL" , [ 1, VoidSymbol ]
     };
     key <AC08> {
-      type[group1] = "FOUR_LEVEL", [ k, K, downarrow, U21D3 ],
+      type[group1] = "FOUR_LEVEL", [ k, K, uparrow, U21D1 ],
       type[group2] = "TWO_LEVEL" , [ 2, VoidSymbol ]
     };
     key <AC09> {
@@ -241,7 +241,7 @@ xkb_keymap {
       type[group2] = "TWO_LEVEL" , [ dollar, plusminus ]
     };
     key <AB05> {
-      type[group1] = "FOUR_LEVEL", [ b, B, VoidSymbol, VoidSymbol ],
+      type[group1] = "FOUR_LEVEL", [ b, B, dagger, doubledagger ],
       type[group2] = "TWO_LEVEL" , [ ampersand, notequal ]
     };
     key <AB06> {
