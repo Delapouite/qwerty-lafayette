@@ -36,11 +36,11 @@ xkb_keymap {
   // │ ~ ~ │ ! ¡ │ @ ‘ │ # ’ │ $ ¤ │ % ‰ │ ^ ³ │ & ¦ │ * π │ ( ☆ │ )   │ _ — │ + ± ┃          ┃
   // │ ` ` │ 1 „ │ 2 “ │ 3 ” │ 4 £ │ 5 € │ 6 ² │ 7 | │ 8 ∞ │ 9 ★ │ 0 ° │ - — │ = ≠ ┃ ⌫        ┃
   // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┯━━━━━━━┩
-  // ┃        ┃ Q Æ │ W É │ E È │ R ™ │ T Þ │ Y   │ U Ù │ I Ĳ │ O Œ │ P ¶ │ « { │ » } │ |     │
-  // ┃ ↹      ┃ q æ │ w é │ e è │ r ® │ t þ │ y ¥ │ u ù │ i ĳ │ o œ │ p § │ ^ [ │ ´ ] │ \     │
+  // ┃        ┃ Q Æ │ W É │ E È │ R ™ │ T Þ │ Y   │ U Ù │ I Ĳ │ O Œ │ P ¶ │ « { │ » } │ |  ˇ  │
+  // ┃ ↹      ┃ q æ │ w é │ e è │ r ® │ t þ │ y ¥ │ u ù │ i ĳ │ o œ │ p § │ ^ [ │ ¨ ] │ \  ˘  │
   // ┣━━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┲━━━━┷━━━━━━━┪
-  // ┃         ┃ A À │ S   │ D Ð │ F ª │ G ¢ │ H ⇐ │ J ⇓ │ K ⇑ │ L ⇒ │ ¨   │ " ˙ ┃            ┃
-  // ┃ ⇬       ┃ a à │ s ß │ d ð │ f ſ │ g © │ h ← │ j ↓ │ k ↑ │ l → │ ★ ` │ ' ` ┃ ⏎          ┃
+  // ┃         ┃ A À │ S   │ D Ð │ F ª │ G ¢ │ H ⇐ │ J ⇓ │ K ⇑ │ L ⇒ │ ° ¯ │ " ˙ ┃            ┃
+  // ┃ ⇬       ┃ a à │ s ß │ d ð │ f ſ │ g © │ h ← │ j ↓ │ k ↑ │ l → │ ★ ` │ ' ´ ┃ ⏎          ┃
   // ┣━━━━━━━━━┻━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┻━━━━━━━━━━━━┫
   // ┃            ┃ Z ≤ │ X ≥ │ C Ç │ V Ŭ │ B ‡ │ N Ñ │ M º │ ;   │ : · │ ? ¿ ┃               ┃
   // ┃ ⇧          ┃ z < │ x > │ c ç │ v ŭ │ b † │ n ñ │ m µ │ , • │ . … │ / \ ┃ ⇧             ┃
@@ -55,10 +55,10 @@ xkb_keymap {
   // │ ` ` │ 1 „ │ 2 “ │ 3 ” │ 4 £ │ 5 € │ 6 ² │ 7 | │ 8 ∞ │ 9 ★ │ 0 ° │ - — │ = ≠ ┃ ⌫        ┃
   // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
   // ┃        ┃ Q Æ │ W É │ E È │ R ™ │ T Þ │ Y   │ U Ù │ I Ĳ │ O Œ │ P ¶ │ « { │ » } ┃       ┃
-  // ┃ ↹      ┃ q æ │ w é │ e è │ r ® │ t þ │ y ¥ │ u ù │ i ĳ │ o œ │ p § │ ^ [ │ ´ ] ┃       ┃
+  // ┃ ↹      ┃ q æ │ w é │ e è │ r ® │ t þ │ y ¥ │ u ù │ i ĳ │ o œ │ p § │ ^ [ │ ¨ ] ┃       ┃
   // ┣━━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓  ⏎   ┃
-  // ┃         ┃ A À │ S   │ D Ð │ F ª │ G ¢ │ H ⇐ │ J ⇓ │ K ⇑ │ L ⇒ │ ¨   │ " ˙ │ |   ┃      ┃
-  // ┃ ⇬       ┃ a à │ s ß │ d ð │ f ſ │ g © │ h ← │ j ↓ │ k ↑ │ l → │ ★ ` │ ' ` │ \   ┃      ┃
+  // ┃         ┃ A À │ S   │ D Ð │ F ª │ G ¢ │ H ⇐ │ J ⇓ │ K ⇑ │ L ⇒ │ ° ¯ │ " ˙ │ | ˇ ┃      ┃
+  // ┃ ⇬       ┃ a à │ s ß │ d ð │ f ſ │ g © │ h ← │ j ↓ │ k ↑ │ l → │ ★ ` │ ' ´ │ \ ˘ ┃      ┃
   // ┣━━━━━━┳━━┹──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┷━━━━━┻━━━━━━┫
   // ┃      ┃ > ≥ │ Z ≤ │ X ≥ │ C Ç │ V Ŭ │ B ‡ │ N Ñ │ M º │ ;   │ : · │ ? ¿ ┃               ┃
   // ┃ ⇧    ┃ < ≤ │ z < │ x > │ c ç │ v ŭ │ b † │ n ñ │ m µ │ , • │ . … │ / \ ┃ ⇧             ┃
@@ -219,7 +219,7 @@ xkb_keymap {
       type[group2] = "TWO_LEVEL" , [ 3, VoidSymbol ]
     };
     key <AC10> {
-      type[group1] = "FOUR_LEVEL", [ ISO_Level3_Latch, dead_diaeresis, grave ],
+      type[group1] = "FOUR_LEVEL", [ ISO_Level3_Latch, dead_abovering, grave, dead_macron ],
       type[group2] = "TWO_LEVEL" , [ minus, VoidSymbol ]
     };
 
@@ -279,15 +279,15 @@ xkb_keymap {
       type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
     };
     key <AD12> {
-      type[group1] = "FOUR_LEVEL", [ dead_acute, guillemotright, bracketright, braceright ],
+      type[group1] = "FOUR_LEVEL", [ dead_diaeresis, guillemotright, bracketright, braceright ],
       type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
     };
     key <AC11> {
-      type[group1] = "FOUR_LEVEL", [ apostrophe, quotedbl, grave, dead_abovedot ],
+      type[group1] = "FOUR_LEVEL", [ apostrophe, quotedbl, dead_acute, dead_abovedot ],
       type[group2] = "TWO_LEVEL" , [ grave, dead_abovedot ]
     };
     key <BKSL> {
-      type[group1] = "FOUR_LEVEL", [ backslash, bar, VoidSymbol, VoidSymbol ],
+      type[group1] = "FOUR_LEVEL", [ backslash, bar, dead_breve, dead_caron ],
       type[group2] = "TWO_LEVEL" , [ brokenbar, VoidSymbol ]
     };
     key <LSGT> {
