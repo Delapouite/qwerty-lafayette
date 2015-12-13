@@ -115,7 +115,7 @@ xkb_keymap {
     };
     // U2030 = ‰
     key <AE05> {
-      type[group1] = "FOUR_LEVEL", [ 5, percent, Eurosign, U2030 ],
+      type[group1] = "FOUR_LEVEL", [ 5, percent, EuroSign, U2030 ],
       type[group2] = "TWO_LEVEL" , [ question, questiondown ]
     };
     key <AE06> {
