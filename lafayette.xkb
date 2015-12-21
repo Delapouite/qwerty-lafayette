@@ -152,7 +152,7 @@ xkb_keymap {
     key <TLDE> {[ grave           , asciitilde     , dead_grave    , dead_tilde       ],[ dead_grave , dead_tilde    ]};
     key <AE11> {[ minus           , underscore     , emdash        , endash           ],[ VoidSymbol , VoidSymbol    ]};
     key <AE12> {[ equal           , plus           , notequal      , plusminus        ],[ VoidSymbol , VoidSymbol    ]};
-    key <AD11> {[ dead_circumflex , guillemotleft  , bracketleft   , braceleft        ],[ VoidSymbol , VoidSymbol    ]};
+    key <AD11> {[ dead_circumflex , guillemotleft  , bracketleft   , braceleft        ],[ dead_greek , VoidSymbol    ]};
     key <AD12> {[ dead_diaeresis  , guillemotright , bracketright  , braceright       ],[ VoidSymbol , VoidSymbol    ]};
     key <AC11> {[ apostrophe      , quotedbl       , dead_acute    , dead_abovedot    ],[ dead_acute , dead_abovedot ]};
     key <BKSL> {[ backslash       , bar            , dead_breve    , dead_caron       ],[ backslash  , brokenbar     ]};
