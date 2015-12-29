@@ -146,7 +146,7 @@ xkb_keymap {
     key <AB07> {[ m      , M         , mu                 , masculine        ],[ 0           , zerosuperior ]};
     key <AB08> {[ comma  , semicolon , enfilledcircbullet , VoidSymbol       ],[ comma       , VoidSymbol   ]};
     key <AB09> {[ period , colon     , ellipsis           , periodcentered   ],[ period      , VoidSymbol   ]};
-    key <AB10> {[ slash  , question  , backslash          , questiondown     ],[ plus        , VoidSymbol   ]};
+    key <AB10> {[ slash  , question  , backslash          , questiondown     ],[ plus        , U061F        ]};
 
     // Painful pinky keys
     key <TLDE> {[ grave           , asciitilde     , dead_grave    , dead_tilde       ],[ dead_grave , dead_tilde    ]};
