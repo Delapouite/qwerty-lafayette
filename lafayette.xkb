@@ -10,6 +10,7 @@
 // To apply this keymap, use:
 //   xkbcomp -w9 lafayette.xkb $DISPLAY
 // Main config files can be found in arch at /usr/share/X11/xkb/
+// See also /usr/include/X11/keysymdef.h
 //
 
 xkb_keymap {
@@ -103,8 +104,7 @@ xkb_keymap {
     key <AE02> {[ 2 , at          , leftdoublequotemark  , leftsinglequotemark  ],[ parenleft  , VoidSymbol   ]};
     key <AE03> {[ 3 , numbersign  , rightdoublequotemark , rightsinglequotemark ],[ parenright , VoidSymbol   ]};
     key <AE04> {[ 4 , dollar      , sterling             , cent                 ],[ equal      , notequal     ]};
-    // U2030 = ‰
-    key <AE05> {[ 5 , percent     , EuroSign             , U2030                ],[ question   , questiondown  ]};
+    key <AE05> {[ 5 , percent     , EuroSign             , permille             ],[ question   , questiondown  ]};
     key <AE06> {[ 6 , asciicircum , twosuperior          , threesuperior        ],[ VoidSymbol , VoidSymbol    ]};
     key <AE07> {[ 7 , ampersand   , bar                  , brokenbar            ],[ 7          , sevensuperior ]};
     key <AE08> {[ 8 , asterisk    , infinity             , Greek_pi             ],[ 8          , eightsuperior ]};
@@ -137,16 +137,16 @@ xkb_keymap {
     key <AC10> {[ ISO_Level3_Latch, dead_abovering, grave, dead_macron ],[ minus, notsign ]};
 
     // Letters, third row
-    key <AB01> {[ z      , Z         , less      , lessthanequal    ],[ apostrophe  , VoidSymbol   ]};
-    key <AB02> {[ x      , X         , greater   , greaterthanequal ],[ quotedbl    , VoidSymbol   ]};
-    key <AB03> {[ c      , C         , ccedilla  , Ccedilla         ],[ asciicircum , VoidSymbol   ]};
-    key <AB04> {[ v      , V         , ubreve    , Ubreve           ],[ dollar      , VoidSymbol   ]};
-    key <AB05> {[ b      , B         , dagger    , doubledagger     ],[ ampersand   , VoidSymbol   ]};
-    key <AB06> {[ n      , N         , ntilde    , Ntilde           ],[ VoidSymbol  , VoidSymbol   ]};
-    key <AB07> {[ m      , M         , mu        , masculine        ],[ 0           , zerosuperior ]};
-    key <AB08> {[ comma  , semicolon , U2022     , VoidSymbol       ],[ comma       , VoidSymbol   ]};
-    key <AB09> {[ period , colon     , ellipsis  , U00B7            ],[ period      , VoidSymbol   ]};
-    key <AB10> {[ slash  , question  , backslash , questiondown     ],[ plus        , VoidSymbol   ]};
+    key <AB01> {[ z      , Z         , less               , lessthanequal    ],[ apostrophe  , VoidSymbol   ]};
+    key <AB02> {[ x      , X         , greater            , greaterthanequal ],[ quotedbl    , VoidSymbol   ]};
+    key <AB03> {[ c      , C         , ccedilla           , Ccedilla         ],[ asciicircum , VoidSymbol   ]};
+    key <AB04> {[ v      , V         , ubreve             , Ubreve           ],[ dollar      , VoidSymbol   ]};
+    key <AB05> {[ b      , B         , dagger             , doubledagger     ],[ ampersand   , VoidSymbol   ]};
+    key <AB06> {[ n      , N         , ntilde             , Ntilde           ],[ VoidSymbol  , VoidSymbol   ]};
+    key <AB07> {[ m      , M         , mu                 , masculine        ],[ 0           , zerosuperior ]};
+    key <AB08> {[ comma  , semicolon , enfilledcircbullet , VoidSymbol       ],[ comma       , VoidSymbol   ]};
+    key <AB09> {[ period , colon     , ellipsis           , periodcentered   ],[ period      , VoidSymbol   ]};
+    key <AB10> {[ slash  , question  , backslash          , questiondown     ],[ plus        , VoidSymbol   ]};
 
     // Painful pinky keys
     key <TLDE> {[ grave           , asciitilde     , dead_grave    , dead_tilde       ],[ dead_grave , dead_tilde    ]};
