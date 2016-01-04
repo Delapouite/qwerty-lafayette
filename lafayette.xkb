@@ -96,7 +96,7 @@ xkb_keymap {
 
     // Options
     // include "capslock(swapescape)"  // Swap CapsLock and Escape -- Vim powwa!
-    // include "compose(menu)"         // Compose on the 'Menu' key
+    include "compose(menu)"         // Compose on the 'Menu' key
     include "compose(prsc)"         // Compose on the Print Screen key on Thinkpad X240
 
     // Digits
