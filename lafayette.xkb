@@ -178,6 +178,8 @@ xkb_keymap {
     key <MUHE> { [ Muhenkan ] };
     // Desktop key - Henkan keycode 100
     key <HENK> { [ Henkan ] };
+    // Play key, next to left ctrl
+    key <I172> { [ Control_L ] };
   };
 
   //xkb_geometry { include "pc(pc105)" };
